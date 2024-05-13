@@ -42,6 +42,7 @@
 		<imagetarget id='rmn' src='targets/rmn.png'></imagetarget>
 		<imagetarget id='TOLINDÃOHAUHAUA' src='targets/TOLINDÃO.png'></imagetarget>
 		<imagetarget id='TOLINDÃO2' src='targets/TOLINDÃO2.png'></imagetarget>
+		<imagetarget id='ArPenQR' src='targets/ArPen.png'></imagetarget>
 
     <video id="webcam-video" muted autoplay playsinline style="width:1px;position:absolute"></video>
     <!-- <video id="webcam-video" muted autoplay playsinline style="width:100%; height:100%; object-fit:cover; position:absolute"></video> -->
@@ -81,7 +82,7 @@
     </div>
     <script src="arcamera.js" type="text/javascript"></script>
     <script src="itracker.js" type="text/javascript"></script>
-    <script src="Build/Atr.loader.js"></script>
+    <script src="Build/ArPen.loader.js"></script>
     <script>
             var initialize = async() =>{
                 var unityCanvas = document.querySelector("#unity-canvas");
@@ -112,9 +113,9 @@
                 
                 document.getElementById("startARDiv").style.display = "none";
                 createUnityInstance(document.querySelector("#unity-canvas"), {
-                    dataUrl: "Build/Atr.data",
-                    frameworkUrl: "Build/Atr.framework.js",
-                    codeUrl: "Build/Atr.wasm",
+                    dataUrl: "Build/ArPen.data",
+                    frameworkUrl: "Build/ArPen.framework.js",
+                    codeUrl: "Build/ArPen.wasm",
                     streamingAssetsUrl: "StreamingAssets",
                     companyName: "DefaultCompany",
                     productName: "CanetaAR",
